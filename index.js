@@ -150,4 +150,7 @@ ujas.put('/reviewUpdate/:id', reviews.reviewUpdate);
 ujas.delete('/reviewDelete/:id', reviews.reviewDelete);
 
 
-ujas.listen(5000);
+PORT = 5000;
+ujas.listen(PORT, () => {
+  console.log(`Server is running on ${PORT}`);
+});
